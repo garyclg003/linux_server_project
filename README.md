@@ -38,7 +38,7 @@ use the ssh-keygen command to retrieve the public key for your key pair.
  ssh -i "DKey.pem"  grader@34.237.139.151
 
 #disable root logins via passwords
-	PermitRootLogin prohibit-password
+	PermitRootLogin no
 
 #force all users to use keys
 sudo vi /etc/ssh/sshd_config
@@ -132,7 +132,13 @@ sudo /etc/init.d/apache2 restart
 
 #setup client secrets in facebook dev and update client secrets file and login html
 
+Utilized Udacity's Full Stack Nano Degree Part 5. Deploying to Linux Servers lesson 2 and 3. 
 
+Also used maketescheasier article to guid me thru SSL configuration to get Facebook logins SSL requirement. 
+https://www.maketecheasier.com/apache-server-ssl-support/
+
+Used riptutorials flask example for guidance on how to link python into apache using wsgi wrapper. 
+https://riptutorial.com/flask/example/23234/wsgi-application-wrapper
 
 
 
